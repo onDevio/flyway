@@ -175,6 +175,13 @@ public class DatabaseFactory {
 
             );
         }
+        if (databaseProductName.startsWith("sql server")) {
+            return new org.flywaydb.core.internal.database.sybasease11.SybaseASEDatabase(configuration, connection, false
+
+
+
+            );
+        }
         if (databaseProductName.startsWith("ASE")) {
             return new SybaseASEDatabase(configuration, connection, false
 
