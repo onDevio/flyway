@@ -109,7 +109,7 @@ public class SybaseASEDatabase extends Database<SybaseASEConnection> {
 
     @Override
     public String getDbName() {
-        return "sybasease";
+        return "sybasease11";
     }
 
     @Override
